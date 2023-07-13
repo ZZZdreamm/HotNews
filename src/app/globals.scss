@@ -1,9 +1,9 @@
 :root {
-  --max-width: 1100px;
+  --max-width: 1400px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -87,12 +87,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
 }
 
 a {
@@ -103,5 +98,90 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+
+
+
+.very-small-font {
+  font-size: 0.4rem;
+}
+.small-font {
+  font-size: 0.8rem;
+}
+.medium-font {
+  font-size: 1.2rem;
+}
+.large-font {
+  font-size: 1.6rem;
+}
+.very-large-font {
+  font-size: 2rem;
+}
+
+.title-font{
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.bold {
+  font-weight: bold;
+}
+.bolder {
+  font-weight: bolder;
+}
+
+.shadow-around {
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+.shadow-beneath {
+  box-shadow: 0 0.05rem 0.2rem 0 rgba(0, 0, 0, 0.2);
+}
+.shadow-above {
+  box-shadow: 0 -0.05rem 0.2rem 0 rgba(0, 0, 0, 0.2);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Corben:700");
+
+@media only screen and (min-width: 4000px) {
+  html {
+    font-size: 56px;
+  }
+}
+
+@media only screen and (min-width: 2400px) and (max-width: 4000px) {
+  html {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 2400px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1100px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 550px) and (max-width: 1100px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 8px;
   }
 }
