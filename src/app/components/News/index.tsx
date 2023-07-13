@@ -1,13 +1,17 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import { getNews } from "../../ApiFunctions";
 import Pagination from "../Pagination";
 import "./styles.scss";
 
 export default function News({ searchQuery }: { searchQuery: string }) {
-  const [page, setPage] = useState(0); //
+  const [page, setPage] = useState(0);
   const { data, status } = useQuery(["news", searchQuery], getNews);
+
+  useEffect(()=>{
+    setPage(0);
+  },[searchQuery])
 
   const newsPage = data?.slice(0 + 10 * page, 9 + 10 * page);
 
