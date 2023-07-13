@@ -91,9 +91,7 @@
 
 
 
-/* Mobile */
 
-/* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
@@ -107,17 +105,17 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .description .blob {
-    height: 25vw;
-  }
-}
+// @media (min-width: 1024px) {
+//   .description .blob {
+//     height: 25vw;
+//   }
+// }
 
-@media (max-width: 440px) {
-  .description .blob {
-    top: 10vh;
-    height: 40vw;
-  }
-}
+// @media (max-width: 440px) {
+//   .description .blob {
+//     top: 10vh;
+//     height: 40vw;
+//   }
+// }
 
 
