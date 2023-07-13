@@ -89,16 +89,19 @@
   padding: 4rem 0;
 }
 
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
-  }
-}
+
 
 /* Mobile */
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+
+@media (max-width: 701px)  {
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
@@ -118,16 +121,3 @@
 }
 
 
-.card{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  border-radius: 1rem;
-  margin: 20px;
-  &:hover{
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-
-  }
-}

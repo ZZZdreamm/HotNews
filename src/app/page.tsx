@@ -6,6 +6,7 @@ import { useState } from "react";
 import SearchNews from "./components/SearchNews";
 
 import Image from "next/image";
+import BottomLinks from "./components/BottomLinks";
 
 export default function Home() {
   const queryClient = new QueryClient();
@@ -40,50 +41,7 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a
-            href=""
-            className={styles.card}
-            onClick={(e) => {
-              e.preventDefault();
-              window.open("", "_blank");
-            }}
-          >
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-          <a
-            href=""
-            className={styles.card}
-            onClick={(e) => {
-              e.preventDefault();
-              window.open("", "_blank");
-            }}
-          >
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-          <a
-            href=""
-            className={styles.card}
-            onClick={(e) => {
-              e.preventDefault();
-              window.open("", "_blank");
-            }}
-          >
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-          <a
-            href=""
-            className={styles.card}
-            onClick={(e) => {
-              e.preventDefault();
-              window.open("", "_blank");
-            }}
-          >
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <BottomLinks/>
 
         </div>
       </main>
