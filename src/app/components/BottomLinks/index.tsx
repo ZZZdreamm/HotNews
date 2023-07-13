@@ -28,6 +28,7 @@ const BottomLinks = () => {
     <>
       {links.map((link) => (
         <a
+          key={link.name}
           href=""
           className="card"
           onClick={(e) => {
