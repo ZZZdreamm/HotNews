@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Home() {
   const queryClient = new QueryClient();
-  const [searchQuery, setSearchQuery] = useState("javascript");
+  const [searchQuery, setSearchQuery] = useState("elon musk");
 
   return (
     <QueryClientProvider client={queryClient}>
