@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useQuery } from "react-query";
-import { getNews } from "../../ApiFunctions";
+import { getNews } from "../../services/ApiFunctions";
 import Pagination from "../Pagination";
 import "./styles.scss";
+import ImageCard from "./imageCard";
 
 export default function News({ searchQuery }: { searchQuery: string }) {
   const [page, setPage] = useState(0);
@@ -28,18 +29,7 @@ export default function News({ searchQuery }: { searchQuery: string }) {
             {newsPage && newsPage.length > 0 ? (
               newsPage.map((news: any) => (
                 <div key={news.id} className="news-card">
-                  <div className="news-card__image">
-                    <Image
-                      src={news.urlToImage || "/no-image.png"}
-                      alt={"news image"}
-                      width={30}
-                      height={30}
-                      layout="responsive"
-                      onClick={() => window.open(news.url, "_blank")}
-                      loading="eager"
-                      priority
-                    />
-                  </div>
+                  <ImageCard imageUrl={news.urlToImage} newsUrl={news.url}/>
                   <div className="news-card__title">{news.title}</div>
                   <div className="news-card__description">{news.content}</div>
                   <div

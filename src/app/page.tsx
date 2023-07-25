@@ -1,11 +1,9 @@
 "use client";
+import { useState } from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import News from "./components/News";
 import styles from "./page.module.scss";
-import { useState } from "react";
-import SearchNews from "./components/SearchNews";
 
-import Image from "next/image";
 import BottomLinks from "./components/BottomLinks";
 import Introduction from "./components/Introduction";
 

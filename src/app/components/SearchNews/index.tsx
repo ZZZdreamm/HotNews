@@ -6,6 +6,7 @@ const SearchNews = ({setSearchQuery}:any) => {
         e.preventDefault();
         const form = document.forms[0];
         const input = form.elements[0] as HTMLInputElement;
+        if(input.value === "") return alert("Please enter search query");
         setSearchQuery(input.value);
         input.value = "";
     }
