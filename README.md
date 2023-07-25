@@ -7,3 +7,9 @@ Technologies used:
 - Node.js
 - SCSS
 - React
+
+About project:
+  
+Small project allowing user to fast search for most recent news about any topic you
+want, using requests to NewsAPI on my backend Node.js server to get data from
+articles.
