@@ -1,15 +1,23 @@
+<h1>HOTNEWS</h1>
 Application allowing you to search for most recent news in last month relating to your choosen topic.
+
+<h2>Online Version</h2>
 Link to app: https://hot-news-cyan.vercel.app/
 
-Technologies used:
-- Next.js
-- REST API (newsapi.org)
-- Node.js
-- SCSS
-- React
+<h2>Technologies</h2>
+<ul>
+  <li>Next.js</li>
+<li>REST API (newsapi.org)</li>
+<li>SCSS</li>
+<li>React</li>
+<li>React Query</li>
+  <li>git, npm</li>
+</ul>
 
-About project:
+<h2>Features</h2>
+<ul>
+  <li>fast searching for recent news in world</li>
+  <li>transforming raw data given from newsapi on backend server</li>
+</ul>
   
-Small project allowing user to fast search for most recent news about any topic you
-want, using requests to NewsAPI on my backend Node.js server to get data from
-articles.
+
